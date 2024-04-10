@@ -5,7 +5,7 @@ let cityName = document.getElementById('cityName').value;
 const apiKey = 'f5fe34768de0436780a53944241004';
 
 async function getData(apiKey,cityName){
-    let data = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=yes`);
+    let data = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=yes`);
     return await data.json();
 }
 
